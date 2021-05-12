@@ -1,5 +1,34 @@
-$basec: red;
+$basec: #e96594;
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
 
 body {
   background: $basec;
+  text-align: center;
+}
+
+main {
+  margin: 20px auto;
+  img {
+   max-width: 300px;
+    width: 100%;
+  }
+
+  .wrapper {
+    position: relative;
+    top: -5px;
+    margin: 0px auto;
+    padding: 30px;
+    max-width: 450px;
+    border-radius: 40px;
+    background: #fff;
+  }
+
+  .down-wrap {
+    img {
+      max-width: 200px;
+    }
+  }
 }
