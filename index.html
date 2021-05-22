@@ -8,25 +8,209 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blindly | Know people before you see them</title>
   <link rel="stylesheet" href="./styles//sass/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div class="logo-wrap">
+        <img src="./img/blindly-logo.png" alt="">
+      </div>
+      <nav>
+        <ul>
+          <li>About us</li>
+          <li>Safety</li>
+          <li>Feedback</li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
   <main>
-    <img src="./img/blindly-dating-app.png" alt="Blindly Dating App">
-    <div class="wrapper">
-      <h3>Say hello to</h3>
-      <h1>Blindly</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veniam odio esse recusandae blanditiis aliquam architecto, accusamus ducimus quidem quasi aperiam tenetur! Atque et quam laboriosam dignissimos fugit iste reiciendis.</p>
-      <div class="down-wrap">
-        <div>
-          <img src="https://img77.uenicdn.com/image/upload/v1589227209/business/e02c5bdc-b68b-4093-b046-0b29d815e091.jpg" alt="download blindly form play store">
+    <div class="container">
+      <section class="content-wrap">
+        <h1>
+          Anonymous Dating, Friends and much more
+        </h1>
+        <p>
+          Did you ever had a match on a dating app;
+          then you find conversations are not going
+          forward? Blindly is here solve exactly that!
+          No matches based on pictures, videos or copy-pasted bios.
+          But only thoughts. 
+        </p>
+        <button class="download-btn" id="sign-up-button">
+          Sign up for beta
+        </button>
+      </section>
+      <section class="image-wrap">
+        <img src="./img/blindly-dating-app.png" alt="Blindly Dating App">
+       </section>
+    </div>
+
+    <div class="what-makes-it-different">
+      <div class="container">
+        <h2>Whats makes it different</h2>
+        <div class="feature-section">
+          <section class="text-section">
+            <h3>
+              A new way of dating and meeting people
+            </h3>
+            <p>
+              We don't believe physical qualities are the
+              only parameter to like a person, unlike other apps🤫.
+              Most the of time its understanding,  conversations and
+              emotional touches. Keeping these the foundation of our
+              matching algorithm we show you the people with whom you
+              have a sense of connection. 
+            </p>
+
+            <h3>
+              Verified accounts.
+            </h3>
+            <p>
+              Blindly is an invite-only network. We trust our
+              members to add the right people to that platform
+              and keep the fun alive. After a telephonic
+              introduction with our team, we sign in a new member.
+              In the process, keeping and platform secure for all
+              users.
+            </p>
+          </section>
+          <section class="image-section">
+            <img src="./img/blindly-features.jpeg" alt="">
+          </section>
         </div>
-        <div>
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Download_on_the_App_Store_Badge.svg/1280px-Download_on_the_App_Store_Badge.svg.png" alt="download blindly form app store">
+
+        <div class="feature-section">
+          <section class="image-section">
+            <img src="./img/blindly-feature-2.jpeg" alt="">
+          </section>
+          <section class="text-section">
+            <h3>
+              Privacy and anonymity
+            </h3>
+            <p>
+              Trust is the key aspect of any long-term and
+              healthy relationship. We do not share your name,
+              pictures or any other details, unless you choose
+              to do so, even after a successful match. You can
+              start messaging but as anonymous members.
+            </p>
+
+            <h3>
+              Reply to questions in text or voice recording
+            </h3>
+            <p>
+              We support asking a question and replying in two
+              interactive formats, voice recording and text.
+              You can choose which format you want to use for
+              any question or reply. 
+            </p>
+          </section>
         </div>
       </div>
     </div>
   </main>
+
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-container">
+        <div class="safety-wrap footer-sections">
+          <h5>Legal</h5>
+          <ul>
+            <li>
+              <a href="/safety.html">
+                Safety
+              </a>
+            </li>
+            <li>
+              <a href="/safety.html">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="/safety.html">
+                Terms
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="safety-wrap footer-sections">
+          <h5>Social</h5>
+          <ul>
+            <li>
+              <a href="/safety.html">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/safety.html">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/safety.html">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="form-overlay hidden" id="sign-up-form">
+    <div class="form-body">
+      <div class="text-wrap">
+        <h1>
+          First 100 users gets
+          <br>
+          FREE subscription for 6 months
+        </h1>
+      </div>
+      <div class="form-wrap">
+        <form action="" id="form">
+          <div class="input-wrap">
+            <label for="name">Your name</label>
+            <input type="text" placeholder="Name" name="name" id="user-name">
+          </div>
+          <div class="input-wrap">
+            <label for="name">Your phone number</label>
+            <input type="number" name="phone" placeholder="9632-xxx-xxx" id="user-phone">
+          </div>
+          <div class="input-wrap">
+            <label for="name">Gender</label>
+            <div class="rad-holder">
+              <div class="rad-wrap">
+                <input type="radio" name="gender" value="male">
+                <p>Male</p>
+              </div>
+              <div class="rad-wrap">
+                <input type="radio" name="gender" value="female">
+                <p>Female</p>
+              </div>
+              <div class="rad-wrap">
+                <input type="radio" name="gender" value="other">
+                <p>Other</p>
+              </div>
+            </div>
+          </div>
+          <button id="cancel-btn">
+            Cancel
+          </button>
+          <button id="form-submit-button" type="button">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+<script src="./js/main.js"></script>
 </body>
 </html>
-
-sudo certbot --nginx -d api.blindly.in -d www.api.blindly.in
