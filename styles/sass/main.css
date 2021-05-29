@@ -242,7 +242,7 @@ footer .footer-container .footer-sections ul a {
 
 .form-overlay > .form-body {
   background: #fff;
-  min-width: 600px;
+  width: 500px;
   border-radius: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -264,7 +264,7 @@ footer .footer-container .footer-sections ul a {
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
-  padding: 30px;
+  padding: 100px;
 }
 
 .form-overlay > .form-body > div.form-wrap .input-wrap {
