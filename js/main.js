@@ -5,12 +5,25 @@ const $cancelBtn = document.getElementById("cancel-btn")
 const $formEle = document.getElementById("sign-up-form")
 const $formSubmitBtn = document.getElementById("form-submit-button")
 
-
-
+// Mobile menu
+const $mobileMenu = document.querySelector(".mobile-menu")
+const $navbar = document.querySelector("header nav")
+let isMobileMenuOpen = false
 
 $signUpBtn.addEventListener("click", () => {
   $formEle.classList.remove("hidden")
   document.body.style.overflow = "hidden"
+})
+
+$mobileMenu.addEventListener("click", () => {
+  if (isMobileMenuOpen) {
+    $navbar.classList.remove("open")
+    $mobileMenu.classList.remove("open")
+  } else {
+    $navbar.classList.add("open")
+    $mobileMenu.classList.add("open")
+  }
+  isMobileMenuOpen = !isMobileMenuOpen
 })
 
 $cancelBtn.addEventListener("click", () => {
