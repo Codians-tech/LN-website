@@ -159,8 +159,9 @@ main {
           max-height: 100px;
         }
 
-        button.download-btn {
+        a.download-btn {
           padding: 10px 16px;
+          text-decoration: none;
           background: $basec;
           border: none;
           color: #fff;

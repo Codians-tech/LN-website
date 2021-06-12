@@ -218,8 +218,9 @@ main > .container > section.content-wrap img {
   max-height: 100px;
 }
 
-main > .container > section.content-wrap button.download-btn {
+main > .container > section.content-wrap a.download-btn {
   padding: 10px 16px;
+  text-decoration: none;
   background: #e96594;
   border: none;
   color: #fff;
@@ -231,7 +232,7 @@ main > .container > section.content-wrap button.download-btn {
   cursor: pointer;
 }
 
-main > .container > section.content-wrap button.download-btn:hover {
+main > .container > section.content-wrap a.download-btn:hover {
   background: #c13d6c;
 }
 
