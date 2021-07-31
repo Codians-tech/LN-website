@@ -69,3 +69,47 @@ $formSubmitBtn.addEventListener("click", async () => {
 
   console.log(payload);
 })
+
+const getDeviceType = () => {
+  const ua = navigator.userAgent;
+  if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
+    return "tablet";
+  }
+  if (
+    /Mobile|iP(hone|od)|Android|BlackBerry|IEMobile|Kindle|Silk-Accelerated|(hpw|web)OS|Opera M(obi|ini)/.test(
+      ua
+    )
+  ) {
+    return "mobile";
+  }
+  return "desktop";
+};
+
+const componentDidMount = async () => {
+  console.log(navigator)
+  console.log(Object.keys(navigator))
+  const data = {};
+  for (var i in navigator) data[i] = navigator[i];
+  
+  console.log(data)
+  debugger
+  const payload = {
+    platform: navigator.platform,
+    deviceType: getDeviceType(),
+    data
+  }
+  if(location.search) {
+    const refArr = location.search.split('?q=ref=')
+    if(refArr.length > 1) {
+      fetch("https://api.blindly.in/api/referrals", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      })
+      window.location.replace("https://play.google.com/store/apps/details?id=in.blindly.app");
+    }
+  }
+  
+}
