@@ -98,6 +98,9 @@ const componentDidMount = async () => {
     if(refArr.length > 1) {
       fetch("https://api.blindly.in/api/referrals", {
         method: "POST",
+        headers: {
+          'Content-Type': 'application/json'
+        },
         body: JSON.stringify(payload)
       })
       window.location.replace("https://play.google.com/store/apps/details?id=in.blindly.app");
