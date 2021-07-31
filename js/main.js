@@ -88,14 +88,15 @@ const getDeviceType = () => {
 const componentDidMount = async () => {
   const data = {};
   for (var i in navigator) data[i] = navigator[i];
-  const payload = {
-    platform: navigator.platform,
-    deviceType: getDeviceType(),
-    data
-  }
   if(location.search) {
     const refArr = location.search.split('?q=ref=')
     if(refArr.length > 1) {
+      const payload = {
+        platform: navigator.platform,
+        deviceType: getDeviceType(),
+        inviteCode: refArr[1],
+        data
+      }
       fetch("https://api.blindly.in/api/referrals", {
         method: "POST",
         headers: {
