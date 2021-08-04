@@ -103,8 +103,12 @@ const componentDidMount = async () => {
           'Content-Type': 'application/json'
         },
         body: JSON.stringify(payload)
+      }).then(() => {
+        window.location.replace("https://play.google.com/store/apps/details?id=in.blindly.app");
+      }).catch(() => {
+        window.location.replace("https://play.google.com/store/apps/details?id=in.blindly.app");
       })
-      window.location.replace("https://play.google.com/store/apps/details?id=in.blindly.app");
+      
     }
   }
   
