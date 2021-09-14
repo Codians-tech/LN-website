@@ -1,0 +1,16 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding: 0px 20px;
+}
