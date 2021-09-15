@@ -53,6 +53,10 @@ const NavWrap = styled.nav`
         color: ${TEXT_C};
         margin: 10px 0px;
         font-weight: 600;
+        &.high {
+          color: ${BASE_C};
+          text-decoration: underline;
+        }
       }
       ${mobile(`
         display: flex;
@@ -70,7 +74,7 @@ const NavWrap = styled.nav`
   }
 `
 
-const LogoWrap = styled.div`
+const LogoWrap = styled.a`
   display: flex;
   align-items: center;
   padding: 10px 0px;
@@ -121,7 +125,7 @@ const MobileMenu = styled.div`
     display: block;
     position: relative;
     margin-top: 8px;
-    background: ${BASE_C};
+    background: ${TEXT_C};
     height: 4px;
     border-radius: 5px;
     transition-duration: 0.4s;
@@ -154,7 +158,7 @@ const Header = (props) => {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
       </Head>
       <InnerWrap className="container">
-          <LogoWrap>
+          <LogoWrap href="/">
             <img src="/static/images/blindly-logo.png" alt="Blindly Logo" />
             <img src="/static/images/blindly-logo-text.png" alt="Blindly Logo" />
           </LogoWrap>
@@ -169,6 +173,11 @@ const Header = (props) => {
             </MobileMenu>
             <ul>
               <li>
+                <a href="/">
+                  Home
+                </a>
+              </li>
+              <li>
                 <a href="/about">
                   About us
                 </a>
@@ -178,11 +187,11 @@ const Header = (props) => {
                   Safety
                 </a>
               </li>
-              {/* <li>
-                <a href="./feedback.html">
-                  Feedback
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=in.blindly.app" className="high" target="_blank">
+                  Download App
                 </a>
-              </li> */}
+              </li>
             </ul>
           </NavWrap>
       </InnerWrap>

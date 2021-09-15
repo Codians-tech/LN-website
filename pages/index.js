@@ -12,6 +12,9 @@ const Main = styled.main`
   text-align: left;
   ${mobile(`
     min-height: 500px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   `)}
 `
 
@@ -34,7 +37,7 @@ const ImageWrap = styled.div`
   flex: 1;
 
   img {
-    width: auto;
+    width: 100%;
     max-height: 600px;
     max-width: 600px;
 
@@ -75,26 +78,52 @@ const InfoWrap = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: left;
 
   > h1 {
     font-size: 60px;
     color: #222;
+    margin: 150px 0px 0px 0px;
     ${mobile(`
       font-size: 40px;
     `)}
+  }
+  p {
+    font-size: 20px;
+    max-width: 700px;
+    margin-bottom: 50px;
   }
 `
 
 const MainImageWrap = styled.div`
   display: flex;
   justify-content: flex-end;
+  position: relative;
+  width: 400px;
+  height: 900px;
+  overflow: hidden;
+  ${mobile(`
+    display: none;
+  `)}
   > img {
     max-width: 500px;
-    right: 0px;
     position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    pointer-events: none;
   }
+`
+
+const MockVideo = styled.video`
+  position: absolute;
+  top: 58px;
+  width: 280px;
+  height: 581px;
+  left: 68px;
+  border-radius: 56px;
+}
 `
 
 const CTAWrap = styled.div`
@@ -103,25 +132,33 @@ const CTAWrap = styled.div`
   }
 `
 
+
+
 const Home = (props) => (
   <Wrap>
     <Main className="container">
       <InfoWrap>
         <h1>
-          Look beyond Pictures
+          Match beyond Pictures
           <br/>
           {/* then reveal Pictures. */}
         </h1>
+        <p>
+          Blindly helps connect with like minded people securely around you and form meaningful connections.
+        </p>
         <CTAWrap>
           <a href="https://play.google.com/store/apps/details?id=in.blindly.app">
             <img src="/static/images/home/download-blindy.png" alt="Blindly Download App"/>
           </a>
         </CTAWrap>
       </InfoWrap>
-
-      {/* <MainImageWrap>
-        <img src="/static/images/home/view-engine.png" alt="Blindly Dating app screenshot"/>
-      </MainImageWrap> */}
+      <MainImageWrap>
+        <img src="/static/images/home/blindly-mock-3.png" alt="Blindly Dating app screenshot"/>
+        <MockVideo autoPlay muted loop>
+          <source src="/static/videos/blindly-mock-view.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </MockVideo>
+      </MainImageWrap>
     </Main>
     {/* <AppExplainer /> */}
     <Section className="container" sec1>
@@ -137,7 +174,7 @@ const Home = (props) => (
         </p>
       </ContentWrap>
       <ImageWrap>
-        <img src="/static/images/home/not-happy.png" alt=""/>
+        <img src="/static/images/home/not-happy.png" alt="" style={{ maxWidth: 300 }}/>
       </ImageWrap>
     </Section>
     <Section className="container" sec2>

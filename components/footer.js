@@ -5,6 +5,7 @@ import { mobile } from "./../consts"
 const Wrap = styled.footer`
   border-top: 1px solid #f2f2f2;
   padding: 60px 0px;
+  margin-top: 100px;
 
   .footer-container {
     display: flex;
@@ -89,17 +90,17 @@ const Footer = (props) => (
           <h5>Legal</h5>
           <ul>
             <li>
-              <a href="/safety.html">
+              <a href="/safety">
                 Safety
               </a>
             </li>
             <li>
-              <a href="/safety.html">
+              <a href="/privacy">
                 Privacy Policy
               </a>
             </li>
             <li>
-              <a href="/safety.html">
+              <a href="/terms">
                 Terms
               </a>
             </li>
@@ -110,17 +111,17 @@ const Footer = (props) => (
           <h5>Social</h5>
           <ul>
             <li>
-              <a href="/safety.html">
+              <a href="https://www.instagram.com/blindlyapp" target="_blank">
                 <i className="fab fa-instagram"></i>
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="/safety.html">
                 <i className="fab fa-youtube"></i>
               </a>
-            </li>
+            </li> */}
             <li>
-              <a href="/safety.html">
+              <a href="https://www.facebook.com/blindlyApp" target="_blank">
                 <i className="fab fa-facebook"></i>
               </a>
             </li>
@@ -131,11 +132,11 @@ const Footer = (props) => (
           <h5>About us</h5>
           <ul>
             <li>
-              <a href="/about-us.html">
-                Our Team
+              <a href="/about">
+                Company
               </a>
             </li>
-            <li>
+            {/* <li>
               <a href="/about-us.html">
                 Careers
               </a>
@@ -144,7 +145,7 @@ const Footer = (props) => (
               <a href="/about-us.html">
                 Work with us
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
 
