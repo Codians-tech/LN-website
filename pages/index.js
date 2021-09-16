@@ -147,7 +147,7 @@ const Home = (props) => (
           {/* then reveal Pictures. */}
         </h1>
         <p>
-          Blindly helps connect with like minded people securely around you and form meaningful connections.
+          Blindly helps you connect with like minded people securely around you and form meaningful connections.
         </p>
         <CTAWrap>
           <a href="https://play.google.com/store/apps/details?id=in.blindly.app">
