@@ -84,7 +84,10 @@ const InfoWrap = styled.div`
   > h1 {
     font-size: 60px;
     color: #222;
-    margin: 150px 0px 0px 0px;
+    margin: 250px 0px 0px 0px;
+    ${tablet(`
+      margin: 150px 0px 0px 0px;
+    `)}
     ${mobile(`
       font-size: 40px;
     `)}
@@ -164,15 +167,17 @@ const Home = (props) => (
     <Section className="container" sec1>
       <ContentWrap>
         <h2>
-          Unlike any other dating app
+          Unlike any dating app you’ve seen before
         </h2>
         <p>
-          Did you ever have a match on a dating app, and not found conversations moving forward?
+          Have you ever come across a match on a dating app and found that the
+          conversation just isn’t progressing?
           <br/>
           <br/>
-          Blindly is here solve exactly that! No matches based on pictures, videos or copy-pasted bios. But only thoughts.
+          Blindly is here to solve just that! Here, you don’t receive matches based on perfectly edited pictures or poorly replicated bios, but just your thoughts. 
         </p>
       </ContentWrap>
+      
       <ImageWrap>
         <img src="/static/images/home/not-happy.png" alt="" style={{ maxWidth: 300 }}/>
       </ImageWrap>
@@ -183,22 +188,23 @@ const Home = (props) => (
       </ImageWrap>
       <ContentWrap>
         <h2>
-          Find common interests before you match.
+          Find common interests before you match
         </h2>
         <p>
-          Ask interesting questions or just a share a joke and match with people who related to with you.
-          Only reveal your profile when you're comfortable with the person.
+          Answer thought-provoking questions, ask your own engaging questions or just
+          share a joke and match with people whom you can get along with! Only reveal
+          your profile once you’re comfortable with your match.
         </p>
       </ContentWrap>
     </Section>
     <Section className="container" sec3>
       <ContentWrap>
         <h2>
-          Build for your safety in mind
+          Build with your safety in mind
         </h2>
         <p>
-          Your account is secured and only your matches can see your full profile. On Blindly you
-          in control of your privacy.
+          Your account is firmly secured and only your matches can see your full profile.
+          Here, on Blindly, you are in control of your privacy.
         </p>
       </ContentWrap>
       <ImageWrap>
