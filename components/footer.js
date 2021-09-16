@@ -43,7 +43,7 @@ const Wrap = styled.footer`
         > ul {
           display: flex;
           > li {
-            flex: 1;
+            width: 40px;
             > a {
               > i {
                 font-size: 25px;
