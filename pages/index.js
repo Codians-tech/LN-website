@@ -10,12 +10,25 @@ const Main = styled.main`
   min-height: 600px;
   display: flex;
   text-align: left;
+  position: relative;
   ${mobile(`
     min-height: 500px;
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   `)}
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -300px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 100px solid #F3F9FE;
+    z-index: -1;
+  }
 `
 
 const Section = styled.div`
@@ -56,11 +69,24 @@ const ContentWrap = styled.div`
   flex-direction: column;
   text-align: left;
   padding: 40px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: -100px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 60px solid #F3F9FE;
+    z-index: -1;
+  }
   ${mobile(`
      padding: 0px;
   `)}
   h2 {
     font-size: 40px;
+    line-height: 1.2;
     ${mobile(`
       font-size: 30px;
     `)}
@@ -83,8 +109,25 @@ const InfoWrap = styled.div`
 
   > h1 {
     font-size: 60px;
-    color: #222;
-    margin: 250px 0px 0px 0px;
+    color: #2b2928;
+    margin: 180px 0px 0px 0px;
+    font-weight: 800;
+    line-height: 1.2;
+    strong {
+      color: ${BASE_C};
+      position: relative;
+      &:after {
+        content: "";
+        width: 100%;
+        position: absolute;
+        height: 40px;
+        bottom: -20px;
+        left: 0px;
+        right: 0px;
+        background: no-repeat url("/static/images/underline-blindly.png");
+        background-size: contain;
+      }
+    }
     ${tablet(`
       margin: 150px 0px 0px 0px;
     `)}
@@ -93,9 +136,11 @@ const InfoWrap = styled.div`
     `)}
   }
   p {
-    font-size: 20px;
+    font-size: 25px;
     max-width: 700px;
     margin-bottom: 50px;
+    font-weight: 500;
+    color: #888b8f;
   }
 `
 
@@ -104,7 +149,7 @@ const MainImageWrap = styled.div`
   justify-content: flex-end;
   position: relative;
   width: 400px;
-  height: 900px;
+  height: 750px;
   overflow: hidden;
   ${mobile(`
     display: none;
@@ -142,7 +187,12 @@ const Home = (props) => (
     <Main className="container">
       <InfoWrap>
         <h1>
-          Match beyond Pictures
+          Looks are Great
+          <br/>
+          Personality is
+          <strong>
+            {` Greater!`}
+          </strong>
           <br/>
           {/* then reveal Pictures. */}
         </h1>
@@ -167,7 +217,9 @@ const Home = (props) => (
     <Section className="container" sec1>
       <ContentWrap>
         <h2>
-          Unlike any dating app you’ve seen before
+          Unlike any dating app
+          <br/>
+          you’ve seen before
         </h2>
         <p>
           Have you ever come across a match on a dating app and found that the

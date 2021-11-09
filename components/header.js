@@ -7,6 +7,7 @@ const LOGO_SIZE = "60px"
 
 const Wrap = styled.div`
   border-bottom: 1px solid ${BORDER_COLOR};
+  background: #fff;
 `
 
 const InnerWrap = styled.header`
@@ -148,12 +149,27 @@ const Header = (props) => {
         <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Blindly | Blind Dating, Making Friends and much more</title>
+        <title>Blindly | New Generation Dating app.</title>
         <meta property="description" content="Did you ever have a match on a dating app, and not found conversations moving forward? Blindly is here solve exactly that! No matches based on pictures, videos or copy-pasted bios. But only thoughts."/>
-        <meta property="image" content="./img/social-share.jpg" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+        <meta property="image" content="/static/images/social-share.png" />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/static/meta/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="/static/meta/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="/static/meta/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/static/meta/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="/static/meta/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/static/meta/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="/static/meta/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/meta/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/meta/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192"  href="/static/meta/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/meta/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="/static/meta/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/meta/favicon-16x16.png" />
+        <link rel="manifest" href="/static/meta/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
         <link href="/static/styles/main.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
       </Head>
@@ -189,7 +205,7 @@ const Header = (props) => {
               </li>
               <li>
                 <a href="https://play.google.com/store/apps/details?id=in.blindly.app" className="high" target="_blank">
-                  Download App
+                  Get the App
                 </a>
               </li>
             </ul>
