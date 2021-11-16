@@ -150,9 +150,9 @@ const Header = (props) => {
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Blindly | New Generation Dating app.</title>
-        <meta property="description" content="Did you ever have a match on a dating app, and not found conversations moving forward? Blindly is here solve exactly that! No matches based on pictures, videos or copy-pasted bios. But only thoughts."/>
+        <meta property="description" content="Blindly helps you connect with like minded people securely around you and form meaningful connections."/>
         <meta property="image" content="/static/images/social-share.png" />
-
+        <meta name="facebook-domain-verification" content="8bmc4wiwbfpmhmq3szi3l5uy7ejo82" />
         <link rel="apple-touch-icon" sizes="57x57" href="/static/meta/apple-icon-57x57.png" />
         <link rel="apple-touch-icon" sizes="60x60" href="/static/meta/apple-icon-60x60.png" />
         <link rel="apple-touch-icon" sizes="72x72" href="/static/meta/apple-icon-72x72.png" />
